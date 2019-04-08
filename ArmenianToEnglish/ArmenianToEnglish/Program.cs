@@ -10,12 +10,9 @@ namespace ArmenianToEnglish
     {
         static void Main(string[] args)
         {
-
             string text = Console.ReadLine();
 
             Console.WriteLine(ToEnglish(text));
-
-
         }
 
         static StringBuilder ToEnglish(string word)
@@ -28,7 +25,6 @@ namespace ArmenianToEnglish
             {
                 switch (item)
                 {
-
                     case 'ա':
                         inEnglish.Append("a");
                         break;
@@ -157,5 +153,4 @@ namespace ArmenianToEnglish
             return inEnglish;
         }
     }
-
 }
